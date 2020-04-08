@@ -105,10 +105,10 @@ body {
     position: relative;
     display: flex;
     height: 280px;
-    width: 410px;
+    width: 420px;
 }
 
-.leftArrow{
+#leftArrow{
     position: absolute;
     color: white;
     top: 50%;
@@ -118,7 +118,7 @@ body {
     font-weight: 500;
 }
 
-.rightArrow{
+#rightArrow{
     position: absolute;
     color: white;
     top: 50%;
@@ -128,14 +128,37 @@ body {
     font-weight: 500;
 }
 
+#pageIndex{
+    position: absolute;
+    color:white;
+    top: 4%;
+    left: 2%;
+    font-size: 7px;
+    font-weight: 300;
+}
+
+
+#artCaption{
+    display: flex;
+    position: absolute;
+    color:white;
+    bottom: 3%;
+    left: 7%;
+    font-size: 8px;
+    font-weight: 500;
+    opacity: 80%;
+    width: 350px;
+    justify-content: center;
+}
+
 .Art{
     display: flex;
     height: 100%;
     width: 100%;
 }
 img{
-    max-width: 100%;
-    object-fit: contain;
+    position: absolute;
+    max-height: 100%;
 }
 
 .MainBodyButtonLayer{
