@@ -102,21 +102,15 @@ body {
 }
 
 .MainBodySecondLayer{
-    display: flex;
-    height: 55%;
-    width: 56%;
-}
-
-.MainBodySecondLayerArt{
     position: relative;
     display: flex;
-    height: 100%;
-    width: 100%;
+    height: 280px;
+    width: 410px;
 }
 
 .leftArrow{
     position: absolute;
-    color: green;
+    color: white;
     top: 50%;
     left: 2%;
     transform: scaleY(2);
@@ -126,7 +120,7 @@ body {
 
 .rightArrow{
     position: absolute;
-    color: green;
+    color: white;
     top: 50%;
     right: 2%;
     transform: scaleY(2);
