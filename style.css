@@ -107,6 +107,19 @@ body {
     width: 420px;
 }
 
+/*.openAfterDeath{
+    transition: 0.5 ease-in-out;
+}
+.roomCube{
+    transition: 0.5 ease-in-out;
+}
+.fatherPortrait{
+    transition: 0.5 ease-in-out;
+}
+.fabric{
+    transition: 0.5 ease-in-out;
+}*/
+
 img{
     position: absolute;
     max-height: 100%;
@@ -178,7 +191,29 @@ img{
     align-items: flex-end;
 }
 
-.circleButton{
+#circleButton1{
+    cursor: pointer;
+    padding-right: 2px;
+    font-size: 20px;
+    opacity: 60%;
+    transition: 0.5s ease;
+}
+
+#circleButton2{
+    cursor: pointer;
+    padding-right: 2px;
+    font-size: 20px;
+    opacity: 30%;
+    transition: 0.5s ease;
+}
+#circleButton3{
+    cursor: pointer;
+    padding-right: 2px;
+    font-size: 20px;
+    opacity: 30%;
+    transition: 0.5s ease;
+}
+#circleButton4{
     cursor: pointer;
     padding-right: 2px;
     font-size: 20px;
@@ -186,7 +221,8 @@ img{
     transition: 0.5s ease;
 }
 
-.circleButton:hover{
+
+#circleButton1:hover, #circleButton2:hover, #circleButton3:hover, #circleButton4:hover{
     opacity: 60%;
 }
 

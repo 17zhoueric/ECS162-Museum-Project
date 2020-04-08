@@ -34,6 +34,35 @@ function slideLeft() {
         artCaption.textContent = "Stephan Kaltenbach and guests, MODERN DRAPERY, 2020. Felt Fabric, 45 x 60 inches.";
         artCaption.style.textAlign = "center";
     }
+    // change opacity of button
+    var button1 = document.getElementById("circleButton1");
+    var button2 = document.getElementById("circleButton2");
+    var button3 = document.getElementById("circleButton3");
+    var button4 = document.getElementById("circleButton4");
+    if (pageIndex.textContent[0] == "2") {
+        button1.style.opacity = 0.3;
+        button2.style.opacity = 0.6;
+        button3.style.opacity = 0.3;
+        button4.style.opacity = 0.3;    
+    }
+    else if (pageIndex.textContent[0] == "3") {
+        button1.style.opacity = 0.3;
+        button2.style.opacity = 0.3;
+        button3.style.opacity = 0.6;
+        button4.style.opacity = 0.3; 
+    }
+    else if (pageIndex.textContent[0] == "4") {
+        button1.style.opacity = 0.3;
+        button2.style.opacity = 0.3;
+        button3.style.opacity = 0.3;
+        button4.style.opacity = 0.6;  
+    }
+    else {
+        button1.style.opacity = 0.6;
+        button2.style.opacity = 0.3;
+        button3.style.opacity = 0.3;
+        button4.style.opacity = 0.3; 
+    }
     // change picture
     var fabric = document.getElementsByClassName("fabric");
     var fatherPortrait = document.getElementsByClassName("fatherPortrait");
