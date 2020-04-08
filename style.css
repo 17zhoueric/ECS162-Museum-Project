@@ -116,7 +116,7 @@ body {
 
 .leftArrow{
     position: absolute;
-    color: white;
+    color: green;
     top: 50%;
     left: 2%;
     transform: scaleY(2);
@@ -126,7 +126,7 @@ body {
 
 .rightArrow{
     position: absolute;
-    color: white;
+    color: green;
     top: 50%;
     right: 2%;
     transform: scaleY(2);
@@ -179,7 +179,7 @@ img{
     display: flex;
     flex-direction: column;
     height: 25%;
-    width: 54%;
+    width: 390px;
     justify-content: center;
     align-items: center;
     font-size: 9px;
@@ -213,7 +213,7 @@ img{
 .footerFirstLayer{
     display: flex;
     flex-direction: row;
-    font-size: 0.9vw;
+    font-size: 8px;
     font-family: "Montserrat", Helvetica, sans-serif;
     font-weight: 600;
     height: 20%;
@@ -227,7 +227,7 @@ img{
 #footerFirstLayerSection1{
     display: flex;
     height: 100%;
-    width: 15%;
+    width: 110px;
     justify-content: flex-start;
     align-items: center;
 }
@@ -235,7 +235,7 @@ img{
 #footerFirstLayerSection2{
     display: flex;
     height: 100%;
-    width: 25%;
+    width: 180px;
     justify-content: flex-start;
     align-items: center;
 }
@@ -243,7 +243,7 @@ img{
 #footerFirstLayerSection3{
     display: flex;
     height: 100%;
-    width: 60%;
+    width: 440px;
     justify-content: flex-start;
     align-items: center;
 }
@@ -251,7 +251,7 @@ img{
 .footerSecondLayer{
     display: flex;
     flex-direction: row;
-    font-size: 0.85vw;
+    font-size: 7px;
     font-family: "Montserrat", Helvetica, sans-serif;
     font-weight: 200;
     height: 80%;
@@ -259,12 +259,14 @@ img{
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom:10px;
-    padding-top: 5px;
+    padding-top: 8px;
+    justify-content: center;
 }
 
 #footerSecondLayerSection1{
     display: flex;
     flex-direction: column;
+    /*width: 140px;*/
     width: 15%;
     justify-content: flex-start;
     align-items: flex-start;
@@ -273,7 +275,8 @@ img{
 #footerSecondLayerSection2{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    /*width: 175px;*/
+    width: 15%;
     justify-content: flex-start;
     align-items: flex-start;
     line-height: 11px;
@@ -282,6 +285,7 @@ img{
 #footerSecondLayerSection3{
     display: flex;
     flex-direction: column;
+    /*width: 415px;*/
     width: 60%;
     justify-content: flex-start;
     align-items: flex-start;
