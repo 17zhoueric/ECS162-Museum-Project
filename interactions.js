@@ -3,7 +3,7 @@ leftArrowButtonListener.addEventListener("click", slideLeft);
 
 function slideLeft() {
     // change pageIndex at top-left
-    let pageIndex = document.getElementById("pageIndex");
+    var pageIndex = document.getElementById("pageIndex");
     if (pageIndex.textContent[0] == "2") {
         pageIndex.textContent = "1 / 4";
     }
@@ -17,7 +17,7 @@ function slideLeft() {
         pageIndex.textContent = "4 / 4";
     }
     // change artCaption at bottom
-    let artCaption = document.getElementById("artCaption");
+    var artCaption = document.getElementById("artCaption");
     if (pageIndex.textContent[0] == "2") {
         artCaption.textContent = "Stephan Kaltenbach, Portrait of My Father, 1972-79. Acrylic on canvas, 114 x 170 3/4 inches.";
         artCaption.style.textAlign = "center";
@@ -35,10 +35,10 @@ function slideLeft() {
         artCaption.style.textAlign = "center";
     }
     // change picture
-    let fabric = document.getElementsByClassName("fabric");
-    let fatherPortrait = document.getElementsByClassName("fatherPortrait");
-    let roomCube = document.getElementsByClassName("roomCube");
-    let openAfterDeath = document.getElementsByClassName("openAfterDeath");
+    var fabric = document.getElementsByClassName("fabric");
+    var fatherPortrait = document.getElementsByClassName("fatherPortrait");
+    var roomCube = document.getElementsByClassName("roomCube");
+    var openAfterDeath = document.getElementsByClassName("openAfterDeath");
     if (pageIndex.textContent[0] == "2") {
         fabric.style.display = "none";
         fatherPortrait.style.display;
@@ -46,12 +46,21 @@ function slideLeft() {
         openAfterDeath.style.display = "none";
     }
     else if (pageIndex.textContent[0] == "3") {
-        
+        fabric.style.display = "none";
+        fatherPortrait.style.display = "none";
+        roomCube.style.display;
+        openAfterDeath.style.display = "none";
     }
     else if (pageIndex.textContent[0] == "4") {
-        
+        fabric.style.display = "none";
+        fatherPortrait.style.display = "none";
+        roomCube.style.display = "none";
+        openAfterDeath.style.display;
     }
     else {
-        
+        fabric.style.display;
+        fatherPortrait.style.display = "none";
+        roomCube.style.display = "none";
+        openAfterDeath.style.display = "none";
     }
 }
