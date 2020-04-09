@@ -8,14 +8,14 @@ html, body {
         HEADER
 ***********************/
 
-.banner{
+#banner{
     flex-direction: row;
     display: flex;
     align-items: center;
     height: 40px;
 }
 
-.bannerLeft{
+#bannerLeft{
     display: flex;
     height: 100%;
     width: 50%;
@@ -26,14 +26,14 @@ html, body {
     font-size: 8px;
 }
 
-.bannerLeft p{
+#bannerLeft p{
     font-size: 8px;
     color: #c9523d;
     padding-left: 2px;
     padding-right: 2px;
 }
 
-.bannerRight{
+#bannerRight{
     display: flex;
     height: 100%;
     width: 50%;
@@ -50,12 +50,12 @@ html, body {
 }
 
 @media screen and (max-width: 600px){
-    .banner{
+    #banner{
         display: flex;
         flex-direction: column;
         height: 40px;
     }
-    .bannerLeft, .bannerRight{
+    #bannerLeft, #bannerRight{
         display: flex;
         height: 50%;
         width: 100%;
@@ -95,7 +95,7 @@ html, body {
         MAIN BODY
 ***********************/
 
-.MainBody{
+#MainBody{
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -104,7 +104,7 @@ html, body {
     font-family: "Open Sans", Helvetica, sans-serif;
 }
 
-.MainBodyFirstLayer{
+#MainBodyFirstLayer{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -113,16 +113,16 @@ html, body {
     height: 80px;
 }
 
-.MainBodyFirstLayer h1{
+#MainBodyFirstLayer h1{
     font-size: 17px;
     padding-bottom: 13px;
 }
 
-.MainBodyFirstLayer h3{
+#MainBodyFirstLayer h3{
     font-size: 13px;
 }
 
-.MainBodySecondLayer{
+#MainBodySecondLayer{
     display: flex;
     height: 100%;
     width: auto;
@@ -130,7 +130,7 @@ html, body {
     padding-right: 150px;
 }
 
-.Art{
+#Art{
     position: relative;
 }
 
@@ -189,7 +189,7 @@ img{
     background-color: rgba(0,0,0,0.8);
 }
 
-#pageIndex{
+.pageIndex{
     position: absolute;
     color: #f2f2f2;
     top: 4%;
@@ -198,7 +198,7 @@ img{
     font-weight: 300;
 }
 
-#artCaption{
+.artCaption{
     display: flex;
     position: absolute;
     color: #f2f2f2;
@@ -210,7 +210,7 @@ img{
     justify-content: center;
 }
 
-.MainBodyButtonLayer{
+#MainBodyButtonLayer{
     display: flex;
     height: 30px;
     width: 100%;
@@ -236,7 +236,7 @@ img{
     to {color: darkgray}
 }
 
-.MainBodyThirdLayer{
+#MainBodyThirdLayer{
     display: flex;
     flex-direction: column;
     height: 150px;
@@ -249,37 +249,37 @@ img{
     padding-top: 10px;
 }
 
-.MainBodyThirdLayer h6{
+#MainBodyThirdLayer h6{
     padding-bottom: 5px;
     line-height: 16px;
 }
 
 @media screen and (max-width: 600px) {
-    .MainBody{
+    #MainBody{
         height: auto;
     }
-    .MainBodyFirstLayer{
+    #MainBodyFirstLayer{
         width: 60%;
         height: 60px;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-    .MainBodyFirstLayer h1{
+    #MainBodyFirstLayer h1{
         font-size: 16px;
         padding-bottom: 4px;
     }
-    .MainBodyFirstLayer h3{
+    #MainBodyFirstLayer h3{
         font-size: 11px;
     }
-    .MainBodySecondLayer{
+    #MainBodySecondLayer{
         height: auto;
         padding: 0;
     }
-    #artCaption{
+    .artCaption{
         font-size: 2vw;
     }
-    #pageIndex{
+    .pageIndex{
         font-size: 1.4vw;
     }
     .circleButtons{
@@ -289,16 +289,16 @@ img{
         padding-left: 0px;
         padding-right: 0px;
     }
-    .MainBodyButtonLayer{
+    #MainBodyButtonLayer{
         height: 20px;
     }
-    .MainBodyThirdLayer{
+    #MainBodyThirdLayer{
         width: 100%;
         height: 150px;
         font-size: 7px;
         justify-content: center;
     }
-    .MainBodyThirdLayer h6, p{
+    #MainBodyThirdLayer h6, p{
         padding: 5px;
     }
 }
@@ -307,14 +307,14 @@ img{
         FOOTER
 ***********************/
 
-.stickyFooter{
+#stickyFooter{
     display: flex;
     background-color: #c6d2da;
     height: 75px;
     width: auto;
 }
 
-.footerFirstLayer{
+#footerFirstLayer{
     display: flex;
     flex-direction: row;
     font-size: 8px;
@@ -371,11 +371,11 @@ img{
 }
 
 @media screen and (max-width: 600px) {
-    .stickyFooter{
+    #stickyFooter{
         height: 180px;
         justify-content: center;
     }
-    .footerFirstLayer{
+    #footerFirstLayer{
         display: flex;
         flex-direction: column-reverse;
         height: 100%;
