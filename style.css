@@ -39,6 +39,7 @@ body {
     color: #000000;
     padding: 10px;
     font-size: 10px;
+    cursor: pointer;
 }
 
 .blueBannerText{
@@ -105,31 +106,26 @@ body {
     width: 100%;
     height: 55%;
     justify-content: center;
+    /*border: 2px red solid;*/
 }
 
 .Art{
     position: relative;
-    display: flex;
     height: 280px;
     width: 420px;
+    margin: auto;
 }
 
-/*.openAfterDeath{
-    transition: 0.5 ease-in-out;
+.slides{
+    display: none;
+    text-align: center;
+    animation-name: slideTransition;
+    animation-duration: 1.5s;
 }
-.roomCube{
-    transition: 0.5 ease-in-out;
-}
-.fatherPortrait{
-    transition: 0.5 ease-in-out;
-}
-.fabric{
-    transition: 0.5 ease-in-out;
-}*/
-
-img{
-    position: absolute;
-    max-height: 100%;
+  
+@keyframes slideTransition {
+    from {opacity: 50%} 
+    to {opacity: 100%}
 }
 
 #leftArrow{
@@ -146,6 +142,7 @@ img{
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 #rightArrow{
@@ -162,6 +159,7 @@ img{
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 3px 0 0 3px;
+    user-select: none;
 }
 
 #leftArrow:hover, #rightArrow:hover{
@@ -198,39 +196,22 @@ img{
     align-items: flex-end;
 }
 
-#circleButton1{
+.circleButtons{
     cursor: pointer;
     padding-right: 2px;
     font-size: 20px;
-    opacity: 60%;
     transition: 0.5s ease;
+    user-select: none;
 }
 
-#circleButton2{
-    cursor: pointer;
-    padding-right: 2px;
-    font-size: 20px;
-    opacity: 30%;
-    transition: 0.5s ease;
-}
-#circleButton3{
-    cursor: pointer;
-    padding-right: 2px;
-    font-size: 20px;
-    opacity: 30%;
-    transition: 0.5s ease;
-}
-#circleButton4{
-    cursor: pointer;
-    padding-right: 2px;
-    font-size: 20px;
-    opacity: 30%;
-    transition: 0.5s ease;
+.circleButtons:hover{
+    animation-name: hovering;
+    animation-duration: 1000s;
 }
 
-
-#circleButton1:hover, #circleButton2:hover, #circleButton3:hover, #circleButton4:hover{
-    opacity: 60%;
+@keyframes hovering{
+    from {color: #636363}
+    to {color: darkgray}
 }
 
 .MainBodyThirdLayer{
