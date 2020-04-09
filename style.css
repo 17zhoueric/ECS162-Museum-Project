@@ -53,6 +53,23 @@ body {
     color: #c9523d;
 }
 
+@media screen and (max-width: 600px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .bannerLeft, .bannerRight{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        padding: 0px;
+        justify-content: center;
+    }
+    .dummyButton{
+        padding: 20px;
+    }
+}
+
 /**********************
         COUNTER
 ***********************/
@@ -68,6 +85,15 @@ body {
     align-items: center;
     color: white;
     background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+    #counter{
+        font-size: 20px;
+        /* FIXME: not sure if 
+        i should keep this height */
+        height: 15%;
+    }
 }
 
 /**********************
@@ -106,14 +132,12 @@ body {
     width: 100%;
     height: 55%;
     justify-content: center;
-    /*border: 2px red solid;*/
 }
 
 .Art{
     position: relative;
     height: 280px;
     width: 420px;
-    margin: auto;
 }
 
 .slides{
@@ -193,7 +217,7 @@ body {
     height: 5%;
     width: 100%;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .circleButtons{
@@ -219,8 +243,6 @@ body {
     flex-direction: column;
     height: 25%;
     width: 390px;
-    justify-content: center;
-    align-items: center;
     font-size: 9px;
     font-weight: 100;
 }
@@ -230,9 +252,39 @@ body {
     line-height: 11px;
 }
 
-.MainBodyThirdLayer p{
-    display: flex;
-    width: 100%;
+@media screen and (max-width: 600px) {
+    .MainBody{
+        height: 60%;
+    }
+    .MainBodyFirstLayer{
+        width: 60%;
+        height: 15%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .MainBodyFirstLayer h1{
+        font-size: 16px;
+        padding-bottom: 4px;
+    }
+    .MainBodyFirstLayer h3{
+        font-size: 11px;
+    }
+    .MainBodySecondLayer{
+        height: 50%;
+    }
+    .MainBodyButtonLayer{
+        height: 5%;
+    }
+    .MainBodyThirdLayer{
+        width: 100%;
+        height: 30%;
+        font-size: 7px;
+        justify-content: center;
+    }
+    .MainBodyThirdLayer h6, p{
+        padding: 5px;
+    }
 }
 
 
@@ -241,8 +293,7 @@ body {
 ***********************/
 
 .stickyFooter{
-    display:flex;
-    flex-direction: column;
+    display: flex;
     background-color: #c6d2da;
     flex-shrink: 0;
     height: 10%;
@@ -306,5 +357,48 @@ body {
     padding-top: 8px;
 }
 
+@media screen and (max-width: 600px) {
+    .stickyFooter{
+        height: 25%;
+        justify-content: center;
+    }
+    .footerFirstLayer{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+    }
+    #footerFirstLayerSection1{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        width: 100%;
+    }
+    #footerFirstLayerSection1 p{
+        padding-top: 4px;
+        padding-left: 0px;
+    }
+    #footerFirstLayerSection2{
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        width: 100%;
+    }
+    #footerFirstLayerSection2 ul{
+        padding-top: 4px;
+        padding-left: 0px;
+        line-height: 10px;
+    }
+    #footerFirstLayerSection3{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        width: 100%;
+    }
+    #footerFirstLayerSection3 p{
+        padding-top: 4px;
+        padding-left: 0px;
+    }
+}
 
 
