@@ -1,6 +1,5 @@
-body {
+html, body {
     font-family: "Montserrat", Helvetica, sans-serif;
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -12,9 +11,8 @@ body {
 .banner{
     flex-direction: row;
     display: flex;
-    height: 5%;
-    justify-content: center;
     align-items: center;
+    height: 40px;
 }
 
 .bannerLeft{
@@ -24,6 +22,15 @@ body {
     justify-content: flex-start;
     align-items: center;
     padding: 15px;
+    color: #2a2d7c;
+    font-size: 8px;
+}
+
+.bannerLeft p{
+    font-size: 8px;
+    color: #c9523d;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .bannerRight{
@@ -42,21 +49,11 @@ body {
     cursor: pointer;
 }
 
-.blueBannerText{
-    color: #2a2d7c;
-    font-size: 8px;
-}
-
-.redBannerText{
-    font-size: 8px;
-    padding: 3px;
-    color: #c9523d;
-}
-
 @media screen and (max-width: 600px){
     .banner{
         display: flex;
         flex-direction: column;
+        height: 40px;
     }
     .bannerLeft, .bannerRight{
         display: flex;
@@ -76,7 +73,6 @@ body {
 
 #counter{
     display: flex;
-    height: 15%;
     width: 100%;
     font-size: 40px;
     font-weight: 400;
@@ -85,14 +81,13 @@ body {
     align-items: center;
     color: white;
     background-color: black;
+    height: 100px;
 }
 
 @media screen and (max-width: 600px) {
     #counter{
         font-size: 20px;
-        /* FIXME: not sure if 
-        i should keep this height */
-        height: 15%;
+        height: 80px;
     }
 }
 
@@ -103,19 +98,19 @@ body {
 .MainBody{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1;
     align-items: center;
-    height: 70%;
+    height: auto;
     font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 .MainBodyFirstLayer{
     display: flex;
     flex-direction: column;
-    height: 15%;
     width: 100%;
     justify-content: center;
     align-items: center;
+    height: 80px;
 }
 
 .MainBodyFirstLayer h1{
@@ -129,22 +124,26 @@ body {
 
 .MainBodySecondLayer{
     display: flex;
-    width: 100%;
-    height: 55%;
-    justify-content: center;
+    height: 100%;
+    width: auto;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .Art{
     position: relative;
-    height: 280px;
-    width: 420px;
 }
 
 .slides{
+    position: relative;
     display: none;
     text-align: center;
     animation-name: slideTransition;
     animation-duration: 1.5s;
+}
+
+img{
+    width: 100%;
 }
   
 @keyframes slideTransition {
@@ -159,7 +158,7 @@ body {
     top: 50%;
     left: 0%;
     transform: scaleY(2);
-    font-size: 10px;
+    font-size: 1.5vw;
     font-weight: 500;
     transition: 0.6s ease;
     padding: 5px;
@@ -176,7 +175,7 @@ body {
     top: 50%;
     right: 0%;
     transform: scaleY(2);
-    font-size: 10px;
+    font-size: 1.5vw;
     font-weight: 500;
     transition: 0.5s ease;
     padding: 5px;
@@ -195,7 +194,7 @@ body {
     color: #f2f2f2;
     top: 4%;
     left: 2%;
-    font-size: 7px;
+    font-size: 1.2vw;
     font-weight: 300;
 }
 
@@ -204,17 +203,16 @@ body {
     position: absolute;
     color: #f2f2f2;
     bottom: 3%;
-    left: 7%;
-    font-size: 8px;
+    font-size: 1.2vw;
     font-weight: 500;
     opacity: 80%;
-    width: 350px;
+    width: 100%;
     justify-content: center;
 }
 
 .MainBodyButtonLayer{
     display: flex;
-    height: 5%;
+    height: 30px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -223,7 +221,7 @@ body {
 .circleButtons{
     cursor: pointer;
     padding-right: 2px;
-    font-size: 20px;
+    font-size: 2.5vw;
     transition: 0.5s ease;
     user-select: none;
 }
@@ -241,24 +239,28 @@ body {
 .MainBodyThirdLayer{
     display: flex;
     flex-direction: column;
-    height: 25%;
-    width: 390px;
-    font-size: 9px;
+    height: 150px;
+    width: auto;
+    font-size: 1.1vw;
     font-weight: 100;
+    padding-left: 163px;
+    padding-right: 163px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .MainBodyThirdLayer h6{
     padding-bottom: 5px;
-    line-height: 11px;
+    line-height: 16px;
 }
 
 @media screen and (max-width: 600px) {
     .MainBody{
-        height: 60%;
+        height: auto;
     }
     .MainBodyFirstLayer{
         width: 60%;
-        height: 15%;
+        height: 60px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -271,14 +273,28 @@ body {
         font-size: 11px;
     }
     .MainBodySecondLayer{
-        height: 50%;
+        height: auto;
+        padding: 0;
+    }
+    #artCaption{
+        font-size: 2vw;
+    }
+    #pageIndex{
+        font-size: 1.4vw;
+    }
+    .circleButtons{
+        font-size: 4vw;
+    }
+    .slides{
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .MainBodyButtonLayer{
-        height: 5%;
+        height: 20px;
     }
     .MainBodyThirdLayer{
         width: 100%;
-        height: 30%;
+        height: 150px;
         font-size: 7px;
         justify-content: center;
     }
@@ -287,7 +303,6 @@ body {
     }
 }
 
-
 /**********************
         FOOTER
 ***********************/
@@ -295,9 +310,8 @@ body {
 .stickyFooter{
     display: flex;
     background-color: #c6d2da;
-    flex-shrink: 0;
-    height: 10%;
-    width: 100%;
+    height: 75px;
+    width: auto;
 }
 
 .footerFirstLayer{
@@ -318,7 +332,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 110px;
+    width: 20%;
 }
 
 #footerFirstLayerSection1 p{
@@ -332,7 +346,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 180px;
+    width: 30%;
 }
 
 #footerFirstLayerSection2 ul{
@@ -347,7 +361,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 440px;
 }
 
 #footerFirstLayerSection3 p{
@@ -359,7 +372,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .stickyFooter{
-        height: 25%;
+        height: 180px;
         justify-content: center;
     }
     .footerFirstLayer{
