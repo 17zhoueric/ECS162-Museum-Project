@@ -2,6 +2,7 @@ html, body {
     font-family: "Montserrat", Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 /**********************
@@ -12,7 +13,7 @@ html, body {
     flex-direction: row;
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 5%;
 }
 
 #bannerLeft{
@@ -81,15 +82,20 @@ html, body {
     align-items: center;
     color: white;
     background-color: black;
-    height: 100px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 @media screen and (max-width: 600px) {
     #counter{
         font-size: 20px;
-        height: 80px;
+        height: 15%;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 }
+
 
 /**********************
         MAIN BODY
@@ -111,6 +117,7 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 80px;
+    height: 20%;
 }
 
 #MainBodyFirstLayer h1{
@@ -124,14 +131,15 @@ html, body {
 
 #MainBodySecondLayer{
     display: flex;
-    height: 100%;
-    width: auto;
-    padding-left: 150px;
-    padding-right: 150px;
+    justify-content: center;
 }
 
 #Art{
+    display: flex;
     position: relative;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
 }
 
 .slides{
@@ -203,7 +211,7 @@ img{
     position: absolute;
     color: #f2f2f2;
     bottom: 3%;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-weight: 500;
     opacity: 80%;
     width: 100%;
@@ -243,15 +251,13 @@ img{
     width: auto;
     font-size: 1.1vw;
     font-weight: 100;
-    padding-left: 163px;
-    padding-right: 163px;
+    width: 58%;
     padding-bottom: 10px;
-    padding-top: 10px;
 }
 
 #MainBodyThirdLayer h6{
     padding-bottom: 5px;
-    line-height: 16px;
+    line-height: 17px;
 }
 
 @media screen and (max-width: 600px) {
@@ -264,6 +270,8 @@ img{
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     #MainBodyFirstLayer h1{
         font-size: 16px;
@@ -275,9 +283,27 @@ img{
     #MainBodySecondLayer{
         height: auto;
         padding: 0;
+        padding-bottom: 5px;
+    }
+    #Art{
+        width: 100%;
+        height: 100%;
+    }
+    .slides{
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 100%;
+    }
+    img{
+        width: 100%;
+        height: 90%;
     }
     .artCaption{
         font-size: 2vw;
+        bottom: 0;
+        height: 10%;
+        background-color: black;
+        opacity: 100%;
     }
     .pageIndex{
         font-size: 1.4vw;
@@ -285,16 +311,12 @@ img{
     .circleButtons{
         font-size: 4vw;
     }
-    .slides{
-        padding-left: 0px;
-        padding-right: 0px;
-    }
     #MainBodyButtonLayer{
         height: 20px;
     }
     #MainBodyThirdLayer{
         width: 100%;
-        height: 150px;
+        height: 40%;
         font-size: 7px;
         justify-content: center;
     }
@@ -310,14 +332,14 @@ img{
 #stickyFooter{
     display: flex;
     background-color: #c6d2da;
-    height: 75px;
+    height: 15%;
     width: auto;
 }
 
 #footerFirstLayer{
     display: flex;
     flex-direction: row;
-    font-size: 8px;
+    font-size: 1vw;
     font-family: "Montserrat", Helvetica, sans-serif;
     font-weight: 600;
     height: 20%;
@@ -336,7 +358,7 @@ img{
 }
 
 #footerFirstLayerSection1 p{
-    font-size: 7px;
+    font-size: 1vw;
     font-family: "Montserrat", Helvetica, sans-serif;
     font-weight: 200;
     padding-top: 8px;
@@ -350,11 +372,11 @@ img{
 }
 
 #footerFirstLayerSection2 ul{
-    font-size: 7px;
+    font-size: 1vw;
     font-family: "Montserrat", Helvetica, sans-serif;
     font-weight: 200;
     padding-top: 8px;
-    line-height: 11px;
+    line-height: 12px;
 }
 
 #footerFirstLayerSection3{
@@ -364,7 +386,7 @@ img{
 }
 
 #footerFirstLayerSection3 p{
-    font-size: 7px;
+    font-size: 1vw;
     font-family: "Montserrat", Helvetica, sans-serif;
     font-weight: 200;
     padding-top: 8px;
@@ -380,6 +402,7 @@ img{
         flex-direction: column-reverse;
         height: 100%;
         width: 100%;
+        font-size: 8px;
     }
     #footerFirstLayerSection1{
         display: flex;
@@ -390,6 +413,7 @@ img{
     #footerFirstLayerSection1 p{
         padding-top: 4px;
         padding-left: 0px;
+        font-size: 7px;
     }
     #footerFirstLayerSection2{
         display: flex;
@@ -401,6 +425,7 @@ img{
         padding-top: 4px;
         padding-left: 0px;
         line-height: 10px;
+        font-size: 7px;
     }
     #footerFirstLayerSection3{
         display: flex;
@@ -411,6 +436,7 @@ img{
     #footerFirstLayerSection3 p{
         padding-top: 4px;
         padding-left: 0px;
+        font-size: 7px;
     }
 }
 
